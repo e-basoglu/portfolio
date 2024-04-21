@@ -11,6 +11,14 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+:root[data-bs-theme='dark'] body {
+  color: white; /* Set text color to white in dark mode */
+}
+
+:root[data-bs-theme='dark'] a {
+  color: white; /* Set link color to a specific color in dark mode */
+}
+
 html {
   scroll-behavior: smooth;
 }
