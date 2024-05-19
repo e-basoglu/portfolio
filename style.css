@@ -15,10 +15,12 @@ body {
   color: white; /* Set text color to white in dark mode */
 }
 
-:root[data-bs-theme='dark'] a {
-  color: white; /* Set link color to a specific color in dark mode */
+:root[data-bs-theme='dark'] a,
+:root[data-bs-theme='dark'] p.section__text__p1,
+:root[data-bs-theme='dark'] p.section__text__p2,
+:root[data-bs-theme='dark'] p.section__text__p3 {
+  color: white; /* Set color to white in dark mode for specific p tags */
 }
-
 html {
   scroll-behavior: smooth;
 }
@@ -57,6 +59,10 @@ a {
   color: black;
   text-decoration: none;
   text-decoration-color: white;
+}
+
+h3 {
+  color: black
 }
 
 a:hover {
@@ -280,9 +286,13 @@ section {
 }
 
 .about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; 
+  padding: 2rem;
+
 }
 
 .about-details-container {
@@ -380,6 +390,11 @@ article .icon {
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
+}
+
+.project-sizing {
+  max-width: 500px; /* Limits maximum width for larger screens */
+  min-width: 250px;
 }
 
 .project-img {
