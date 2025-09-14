@@ -12,14 +12,14 @@ body {
 }
 
 :root[data-bs-theme='dark'] body {
-  color: white; /* Set text color to white in dark mode */
+  color: white; 
 }
 
 :root[data-bs-theme='dark'] a,
 :root[data-bs-theme='dark'] p.section__text__p1,
 :root[data-bs-theme='dark'] p.section__text__p2,
 :root[data-bs-theme='dark'] p.section__text__p3 {
-  color: white; /* Set color to white in dark mode for specific p tags */
+  color: white; 
 }
 html {
   scroll-behavior: smooth;
@@ -172,6 +172,8 @@ section {
 
 .section-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* PROFILE SECTION */
@@ -281,6 +283,10 @@ section {
 }
 
 /* ABOUT SECTION */
+/* Justify about text paragraph */
+.about-text-container .section__text__p3 {
+  text-align: justify;
+}
 
 #about {
   position: relative;
@@ -289,16 +295,19 @@ section {
 .about-containers {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
   gap: 20px; 
   padding: 2rem;
-
+  width: 100%;
 }
 
 .about-details-container {
+  display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
+  margin-top: 2rem;
 }
 
 .about-containers,
@@ -322,6 +331,7 @@ section {
   align-items: center;
   padding: 1rem;
   flex: 1;
+  min-height: 300px;
   background: white;
   border-radius: 2rem;
   border: 0.1rem solid rgb(163, 163, 163);
@@ -335,7 +345,7 @@ section {
 }
 
 .section-container {
-  gap: 4rem;
+  gap: 2rem;
   height: 80%;
 }
 
@@ -442,7 +452,7 @@ article .icon {
 }
 
 .contact-content {
-  margin-bottom: 3rem; /* Add some margin to separate the sections */
+  margin-bottom: 3rem; 
 }
 
 .contact-info-upper-container {

@@ -66,6 +66,29 @@
 }
 
 @media screen and (max-width: 600px) {
+  .details-container {
+    font-size: 0.95rem !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  .article-container {
+    font-size: 0.95rem !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+  .about-containers,
+  .experience-details-container {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 1.5rem !important;
+    width: 100% !important;
+  }
+  .details-container {
+    width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 auto 1rem auto !important;
+    box-sizing: border-box !important;
+  }
   #contact,
   footer {
     height: 40vh;
